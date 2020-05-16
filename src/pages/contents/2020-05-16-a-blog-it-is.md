@@ -1,6 +1,9 @@
 ---
 templateKey: content-module
-heading: A Blog it is.
+heading: A Blog it is..
+subheading: I don't know what I'm doing！
+foreground: /assets/foreground.png
+background: /assets/background.jpg
 contentModule:
   - heading: はじめまして世界！
     content: |-
