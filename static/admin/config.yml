@@ -18,4 +18,3 @@ collections:
       - {label: "Foreground", name: "foreground", widget: "image"}
       - {label: "Background", name: "background", widget: "image"}
       - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Date, name: date, widget: datetime, dateFormat: 'DD.MM.YYYY', timeFormat: 'HH:mm', pickerUtc: false },{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image, required: false}]}
-      - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Date, name: date, widget: datetime, dateFormat: 'DD.MM.YYYY', timeFormat: 'HH:mm', pickerUtc: false },{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image, required: false}]}
