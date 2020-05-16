@@ -1,21 +1,37 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Content from "../components/Content/content"
+const IndexPage = ({data}) => {
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+  const {markdownRemark} = data;
+  const {frontmatter} = markdownRemark;
+  console.log(markdownRemark);
+  console.log(frontmatter);
+  return (
+    <Layout>
+    <h1>{frontmatter.heading}</h1>
+      <Content data={frontmatter.contentModule} id={markdownRemark.id}/>
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+
+export const indexQuery = graphql`
+  query IndexPageQuery {
+    markdownRemark {
+      frontmatter {
+        heading
+        templateKey
+        contentModule {
+          content
+          heading
+        }
+      }
+      id
+    }
+  }
+`
