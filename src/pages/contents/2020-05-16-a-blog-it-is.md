@@ -2,7 +2,7 @@
 templateKey: content-module
 heading: A Blog it is.
 contentModule:
-  - heading: 初めまして世界
+  - heading: はじめまして世界
     content: |-
       今日はいったいなをしてるんだろう
 
