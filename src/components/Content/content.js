@@ -11,6 +11,7 @@ const Content = ({data, id}) => {
         <div className="content--wrapper" key={id}>
         <img src={content.image} alt=""/>
           <h2>{content.heading}</h2>
+          <span>{content.date}</span>
           <p>{content.content}</p>
 
         </div>

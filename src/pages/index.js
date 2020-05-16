@@ -27,8 +27,9 @@ export const indexQuery = graphql`
         heading
         templateKey
         contentModule {
-          content
+          date
           heading
+          content
         }
       }
       id
