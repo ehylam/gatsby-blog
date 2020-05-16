@@ -27,7 +27,7 @@ export const indexQuery = graphql`
         heading
         templateKey
         contentModule {
-          date
+          date(fromNow: false, formatString: "dddd DD MMMM YYYY HH:m:ss a", locale: "")
           heading
           content
         }
