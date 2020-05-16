@@ -14,4 +14,4 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-module"}
       - {label: "Heading", name: "heading", widget: "string"}
-      - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image}]}
+      - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image, required: false}]}
