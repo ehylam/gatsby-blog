@@ -1,0 +1,38 @@
+.hero__container,
+.foreground {
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	filter: grayscale(1);
+}
+
+.hero__container {
+	position: relative;
+	.foreground {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+	.hero-content__wrapper {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 45vh;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-content {
+		color: white;
+
+		h1 {
+			font-size: 65px;
+		}
+	}
+}

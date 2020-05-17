@@ -2,6 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Hero from '../components/Hero/hero'
 import Content from "../components/Content/content"
 const IndexPage = ({data}) => {
 
@@ -11,7 +12,11 @@ const IndexPage = ({data}) => {
   console.log(frontmatter);
   return (
     <Layout>
-    <h1>{frontmatter.heading}</h1>
+      <Hero heading={frontmatter.heading}
+            subheading={frontmatter.subheading}
+            background={frontmatter.background}
+            foreground={frontmatter.foreground}
+      />
       <Content data={frontmatter.contentModule} id={markdownRemark.id}/>
     </Layout>
   )
@@ -24,12 +29,15 @@ export const indexQuery = graphql`
   query IndexPageQuery {
     markdownRemark {
       frontmatter {
-        heading
         templateKey
+        heading
+        subheading
+        background
+        foreground
         contentModule {
-          date(fromNow: false, formatString: "dddd DD MMMM YYYY HH:m:ss a", locale: "")
-          heading
           content
+          heading
+          date(fromNow: false, formatString: "dddd DD MMMM YYYY HH:mm", locale: "")
         }
       }
       id
