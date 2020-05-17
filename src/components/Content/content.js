@@ -6,6 +6,7 @@ const Content = ({data, id}) => {
 
   return (
     <section className="content__container" >
+    {/* Todo: markdown spaces */}
     {
       data.map((content) => (
         <div className="content--wrapper" key={id}>
