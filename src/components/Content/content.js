@@ -6,15 +6,15 @@ const Content = ({data, id}) => {
 
   return (
     <section className="content__container" >
-    {/* Todo: markdown spaces */}
+    {/* {Dont use index...} */}
     {
-      data.map((content) => (
-        <div className="content--wrapper" key={id}>
+      data.map((content, index) => (
+        <div className="content--wrapper" key={index}>
         <img src={content.image} alt=""/>
           <h2>{content.heading}</h2>
           <span>{content.date}</span>
           <p>{content.content}</p>
-
+          <a href="">Don't   Read More</a>
         </div>
       ))
     }
