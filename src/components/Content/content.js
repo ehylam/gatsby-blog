@@ -10,10 +10,12 @@ const Content = ({data, id}) => {
     {
       data.map((content, index) => (
         <div className="content--wrapper" key={index}>
-        <img src={content.image} alt=""/>
-          <h2>{content.heading}</h2>
-          <span>{content.date}</span>
-          <p>{content.content}</p>
+          <div className="content">
+            <img src={content.image} alt=""/>
+            <h2>{content.heading}</h2>
+            <span>{content.date}</span>
+            <p>{content.content}</p>
+          </div>
           <a href="">Don't   Read More</a>
         </div>
       ))

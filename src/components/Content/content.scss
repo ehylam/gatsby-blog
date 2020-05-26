@@ -1,13 +1,21 @@
 .content__container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 400px);
+	grid-template-columns: repeat(auto-fit, 100vw);
 	grid-template-rows: repeat(5, 1fr);
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
 
 	.content--wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-direction: column;
 		@media (min-width: 768px) {
 			padding: 60px 0 60px 60px;
+		}
+
+		.content {
+			max-width: 50%;
 		}
 	}
 }
