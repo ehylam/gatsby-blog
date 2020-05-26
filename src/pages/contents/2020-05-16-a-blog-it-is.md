@@ -63,4 +63,12 @@ contentModule:
       （**ふってる**）
 
       (rain**ing)**
+  - date: 2020-05-26T04:16:34.302Z
+    heading: はこう！
+    content: |-
+      はこう（self）・はこ(other)　〜to wear (below waist)
+
+      この靴履く。
+
+      （I'll wear these shoes)
 ---
