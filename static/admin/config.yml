@@ -14,6 +14,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-module"}
       - {label: "Heading", name: "heading", widget: "string"}
+      - {label: "Post Type", name: "posttype", widget: "select", options: ["web","jp","other"], default: ["web"]}
       - {label: "Subheading", name: "subheading", widget: "string"}
       - {label: "Foreground", name: "foreground", widget: "image"}
       - {label: "Background", name: "background", widget: "image"}

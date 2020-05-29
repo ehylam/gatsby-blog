@@ -5,7 +5,7 @@ import './content.scss';
 const Content = ({data, id}) => {
 
   return (
-    <section className="content__container" >
+    <section className="content__container" id={id}>
     {/* {Dont use index...} */}
     {
       data.map((content, index) => (
