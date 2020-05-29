@@ -1,10 +1,13 @@
 .content__container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 100vw);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-columns: repeat(auto-fit, 49vw);
+	// grid-template-rows: repeat(5, 1fr);
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
-
+	max-width: 99vw;
+	margin: 0 auto;
+	// Do you work in IE?
+	grid-auto-rows: 1fr;
 	.content--wrapper {
 		display: flex;
 		justify-content: space-between;
