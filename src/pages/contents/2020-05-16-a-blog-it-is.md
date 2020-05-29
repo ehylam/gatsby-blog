@@ -71,4 +71,16 @@ contentModule:
       この靴履く。
 
       （I'll wear these shoes)
+  - date: 2020-05-29T10:25:11.698Z
+    heading: 明日仕事ありません。。でも。。
+    content: |-
+      これかわも仕事と日本語の頑張つづけます！
+
+      これかわ　- (from now on(but have always been...))
+
+      仕事と日本語　ー (Work (Web Dev) & Japanese）- しごとと日本語
+
+      頑張り　ー (do my best)　ー　がんばり
+
+      つづけ 　ー (Keep on / keep up)
 ---
