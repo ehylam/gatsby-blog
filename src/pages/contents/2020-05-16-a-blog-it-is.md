@@ -18,6 +18,7 @@ contentModule:
 
       わかりません。。
     date: 2020-05-16T11:14:17.215Z
+    posttype: jp
   - date: 2020-05-17T04:27:23.822Z
     heading: すみません、お手洗いはどこですか？
     content: |-
@@ -26,6 +27,7 @@ contentModule:
 
 
       じゃあ、またね
+    posttype: jp
   - date: 2020-05-19T02:51:03.512Z
     heading: 日本語をべんきょうしてる。。
     content: |-
@@ -45,6 +47,7 @@ contentModule:
       ううううう  
 
       書かない
+    posttype: jp
   - date: 2020-05-23T03:20:23.138Z
     heading: "'flexible content' はどこですか？？"
     content: |
@@ -56,6 +59,7 @@ contentModule:
       来てください
       新しいmacbookpro2022買おっかな。。？
       でも。。。ほんとに高いです。。
+    posttype: jp
   - date: 2020-05-24T03:46:08.469Z
     heading: お金を貯めなきゃいけない。。！
     content: |-
@@ -64,6 +68,7 @@ contentModule:
       （**ふってる**）
 
       (rain**ing)**
+    posttype: jp
   - date: 2020-05-26T04:16:34.302Z
     heading: はこう！
     content: |-
@@ -72,6 +77,7 @@ contentModule:
       この靴履く。
 
       （I'll wear these shoes)
+    posttype: jp
   - date: 2020-05-29T10:25:11.698Z
     heading: 明日仕事ありません。。でも。。
     content: |-
@@ -84,4 +90,21 @@ contentModule:
       頑張り　ー (do my best)　ー　がんばり
 
       つづけ 　ー (Keep on / keep up)
+    posttype: jp
+  - posttype: web
+    date: 2020-05-29T11:34:53.186Z
+    heading: Use 'vw' to maintain the position of the selected element relative to
+      the screen width.
+    content: |-
+      #### Example
+
+      ###### Elements:
+
+      .container
+
+      2x columns
+
+      \- Inside columns contain a wrapper (left/right)
+
+      \-- Use margin/padding-left/right: {num}vw;
 ---
