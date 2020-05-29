@@ -96,9 +96,9 @@ contentModule:
     heading: Use 'vw' to maintain the position of the selected element relative to
       the screen width.
     content: |-
-      #### Example
+      # Example
 
-      ###### Elements:
+      ### Elements:
 
       .container
 
