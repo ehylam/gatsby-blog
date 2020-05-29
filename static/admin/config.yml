@@ -14,8 +14,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-module"}
       - {label: "Heading", name: "heading", widget: "string"}
-      - {label: "Post Type", name: "posttype", widget: "select", options: ["web","jp","other"], default: ["web"]}
       - {label: "Subheading", name: "subheading", widget: "string"}
       - {label: "Foreground", name: "foreground", widget: "image"}
       - {label: "Background", name: "background", widget: "image"}
-      - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Date, name: date, widget: datetime, dateFormat: 'DD.MM.YYYY', timeFormat: 'HH:mm', pickerUtc: false },{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image, required: false}]}
+      - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Date, name: date, widget: datetime, dateFormat: 'DD.MM.YYYY', timeFormat: 'HH:mm', pickerUtc: false }, {label: "Post Type", name: "posttype", widget: "select", options: ["web","jp","other"], default: ["web"]},{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image, required: false}]}
