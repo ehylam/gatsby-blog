@@ -14,7 +14,7 @@
 	grid-auto-rows: 1fr;
 	.content--wrapper {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: flex-start;
 		flex-direction: column;
 		@media (min-width: 768px) {
@@ -29,9 +29,6 @@
 			@media screen and (min-width: 1280px) {
 				max-width: 50%;
 			}
-		}
-		a {
-			margin-bottom: 60px;
 		}
 	}
 }
