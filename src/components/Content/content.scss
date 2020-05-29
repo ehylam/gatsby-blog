@@ -1,6 +1,9 @@
 .content__container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 49vw);
+	grid-template-columns: repeat(auto-fit, 99vw);
+	@media screen and (min-width: 1024px) {
+		grid-template-columns: repeat(auto-fit, 49vw);
+	}
 	// grid-template-rows: repeat(5, 1fr);
 	grid-column-gap: 15px;
 	grid-row-gap: 15px;
