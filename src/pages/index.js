@@ -4,12 +4,11 @@ import React from "react"
 import Layout from "../components/layout"
 import Hero from '../components/Hero/hero'
 import Content from "../components/Content/content"
+import Filter from "../components/Filter/Filter"
 const IndexPage = ({data}) => {
 
   const {markdownRemark} = data;
   const {frontmatter} = markdownRemark;
-  console.log(markdownRemark);
-  console.log(frontmatter);
   return (
     <Layout>
       <Hero heading={frontmatter.heading}
@@ -17,6 +16,7 @@ const IndexPage = ({data}) => {
             background={frontmatter.background}
             foreground={frontmatter.foreground}
       />
+      <Filter posttypes={frontmatter.contentModule}/>
       <Content data={frontmatter.contentModule} id={markdownRemark.id}/>
     </Layout>
   )
@@ -38,6 +38,7 @@ export const indexQuery = graphql`
           content
           heading
           date(fromNow: false, formatString: "dddd DD MMMM YYYY HH:mm", locale: "")
+          posttype
         }
       }
       id

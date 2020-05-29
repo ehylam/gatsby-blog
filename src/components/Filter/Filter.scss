@@ -1,0 +1,15 @@
+.filter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 10px 0;
+	a {
+		padding: 0 10px;
+		&:hover {
+			color: rgb(180, 180, 180);
+			text-decoration: none;
+			border-bottom: 1px dashed #ffffff;
+		}
+	}
+}
