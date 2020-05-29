@@ -1,13 +1,14 @@
 .content__container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, 99vw);
+	grid-template-columns: repeat(auto-fit, 100%);
+	max-width: 1280px;
 	@media screen and (min-width: 1024px) {
-		grid-template-columns: repeat(auto-fit, 49vw);
+		grid-template-columns: repeat(auto-fit, 50%);
+		max-width: 1400px;
 	}
 	// grid-template-rows: repeat(5, 1fr);
-	grid-column-gap: 15px;
 	grid-row-gap: 15px;
-	max-width: 99vw;
+	max-width: 1400px;
 	margin: 0 auto;
 	// Do you work in IE?
 	grid-auto-rows: 1fr;
@@ -19,10 +20,13 @@
 		@media (min-width: 768px) {
 			padding: 60px 0 60px 60px;
 		}
+		@media screen and (min-width: 1024px) {
+			padding: 50px;
+		}
 
 		.content {
 			max-width: 100%;
-			@media screen and (min-width: 1024px) {
+			@media screen and (min-width: 1280px) {
 				max-width: 50%;
 			}
 		}
