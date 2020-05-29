@@ -78,9 +78,9 @@ contentModule:
 
       これかわ　- (from now on(but have always been...))
 
-      仕事と日本語　ー (Work (Web Dev) & Japanese）
+      仕事と日本語　ー (Work (Web Dev) & Japanese）- しごとと日本語
 
-      頑張り　ー (do my best)
+      頑張り　ー (do my best)　ー　がんばり
 
       つづけ 　ー (Keep on / keep up)
 ---
