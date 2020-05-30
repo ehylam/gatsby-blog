@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 // import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -9,9 +9,25 @@ import Filter from "../components/Filter/Filter"
 // TODO:
 // Dynamic Filter List that can be added using NetlifyCMS repeater widget?
 
-const IndexPage = ({data}) => {
+const IndexPage = ({data}, props) => {
   const {markdownRemark} = data;
   const {frontmatter} = markdownRemark;
+  const [windowState, setWindowState] = useState({
+    windowOn: false,
+    posts: null
+  })
+
+
+  useEffect(() => {
+      var posts = document.getElementsByClassName('content--wrapper');
+      setWindowState({
+        windowOn: true,
+        posts: posts
+      })
+  },[])
+  console.log(windowState);
+
+
   return (
     <Layout>
       <Hero heading={frontmatter.heading}
@@ -19,7 +35,8 @@ const IndexPage = ({data}) => {
             background={frontmatter.background}
             foreground={frontmatter.foreground}
       />
-      <Filter posttypes={frontmatter.contentModule}/>
+      {/* Replace loading to a new loading component? */}
+      { windowState.windowOn  ? <Filter posttypes={frontmatter.contentModule} postData={windowState.posts}/> : 'loading'}
       <Content data={frontmatter.contentModule} id={markdownRemark.id}/>
     </Layout>
   )
