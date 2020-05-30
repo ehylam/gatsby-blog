@@ -44,6 +44,7 @@ const Filter = ({posttypes, id, postData}) => {
   return (
     <section className="filter" >
           <div className="post-list">
+        {/* Need to add data type attribute to the other div for the filter to work */}
       {
         uniq.map((post, index) => (
           <div className="type" data-type={post} key={index} onClick={(e) => { getFilter(e)}}>
