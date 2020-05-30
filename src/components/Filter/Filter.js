@@ -21,6 +21,7 @@ const Filter = ({posttypes, id, postData}) => {
     for (let y = 0; y < postData.length; y++) {
       const post = postData[y];
       postArr.push(post);
+
     }
     uniq = [...new Set(filterArr)];
     postId = [...new Set(postArr)];
@@ -31,6 +32,7 @@ const Filter = ({posttypes, id, postData}) => {
     for (let i = 0; i < postId.length; i++) {
       const element = postId[i];
       var post = element.getAttribute('data-type');
+      console.log(post);
       element.classList.remove('active');
       if(post === filter) {
         // console.log(this)
@@ -44,7 +46,10 @@ const Filter = ({posttypes, id, postData}) => {
           <div className="post-list">
       {
         uniq.map((post, index) => (
-          <a className="type" data-type={post} key={index} href="#" onClick={(e) => { getFilter(e)}}>{post}</a>
+          <div className="type" data-type={post} key={index} onClick={(e) => { getFilter(e)}}>
+            <div data-type={post}>{post}</div>
+            <div data-type={post}>{post}</div>
+          </div>
         ))
       }
           </div>
