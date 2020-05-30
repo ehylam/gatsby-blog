@@ -20,7 +20,7 @@ const Content = ({data, id}) => {
     {/* {Dont use index...} */}
     {
       data.map((content, index) => (
-        <div className="content--wrapper" key={index} data-type={content.posttype}>
+        <div className="content--wrapper active" key={index} data-type={content.posttype}>
           <div className="content">
             <img src={content.image} alt=""/>
             <h2>{content.heading}</h2>

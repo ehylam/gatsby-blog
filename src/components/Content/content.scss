@@ -13,10 +13,13 @@
 	// Do you work in IE?
 	grid-auto-rows: 1fr;
 	.content--wrapper {
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: flex-start;
 		flex-direction: column;
+		&.active {
+			display: flex;
+		}
 		@media (min-width: 768px) {
 			padding: 60px 0 60px 60px;
 		}
