@@ -6,14 +6,12 @@ import Hero from '../components/Hero/hero'
 import Content from "../components/Content/content"
 import Filter from "../components/Filter/Filter"
 
-
+// TODO:
+// Dynamic Filter List that can be added using NetlifyCMS repeater widget?
 
 const IndexPage = ({data}) => {
   const {markdownRemark} = data;
   const {frontmatter} = markdownRemark;
-
-
-
   return (
     <Layout>
       <Hero heading={frontmatter.heading}
