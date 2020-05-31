@@ -110,7 +110,42 @@ contentModule:
   - posttype: web
     date: 2020-05-31T03:52:37.339Z
     heading: Post Type/ Category filtering system.
-    content: So, I'm surprised that I was able to create a filter system purely on
-      Javascript and some cool ES6 features as I usually use jQuery as it is
-      what I usually use for Wordpress development.
+    content: >+
+      ** NOTETOSELF&TODO: Add a single post page or else the 'preview post' or
+      else this happens..**
+
+
+      So, I'm surprised that I was able to create a filter system purely on Javascript and some cool ES6 features as I usually use jQuery as it is what I usually use for Wordpress development.
+
+      ___
+
+
+      What the first version of this post filtering thingy does:
+
+
+      Firstly, I used NetlifyCMS to do the content management, thats another whole story!
+
+
+      Now, I created a state using React Js' cool state hook, the data set inside are the following, `windowOn` and `posts`, regarding `posts`, I used the `document.getElementByClassName` to get the repeated posts elements, but firstly since Gatsby/React is fast as fish (JAMstack ftw) the `document.getElementByClassName` should be executed when the DOM is ready, I used another hook that React has created for us called `useEffect`, which is essentially `componentDidMount()` that are used in class based components, what it does is once the the component is mounted on to the DOM, whatever the contents inside the `useEffect`/`componentDidMount()` will be executed. Ultimately, this is like using jQuery's `$(document).on('load',function(){});` or `.ready(function());`. Also, not to forget about the `windowOn`, it will be set to `true` inside the `useEffect()` function.
+
+
+
+      Now, I create a new component called 'Filter' and imported it inside the index file, in the return function, I then add
+
+       `{ windowState.windowOn  ? <Filter posttypes={frontmatter.contentModule} postData={windowState.posts}/> : 'loading'}`
+
+      By using the ternary operator, it will input the Filter component to the DOM when `windowState` is true, else it will output `loading`. The data that are passed through are the current posted 'posts' and the available post filters that are being used.
+
+
+      ***at this point, I've seen become lazy in explaining and simplfied it..***
+
+
+
+      Next, Inside the filter component as 4 predefined variables, 2 arrays and 2 unset variables, the `filterArr` array will be populated with the available post types which are "web and jp" the `postArr` will be populated with the number of posts which will be sorted by their selected post type.
+
+
+      Next in the return function will contain a div that has an `onClick` feature that runs the getFilter function that will pass through the clicked value's `data-type`. Inside the getFilter function it will run a for loop which will loop through all of the posted 'posts' and get their attribute, following that it will remove the `active` class from all of the posts containers and then using a conditional statement we check if the clicked filter matches the posts, if it is true it will add the `active` class to the matching posts.
+
+
+      FIN.
 ---
