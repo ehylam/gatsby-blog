@@ -21,7 +21,7 @@ const Hero = (props) => {
         <li><h1>TODO!</h1></li>
         <li>Single Post Page with custom permalink</li>
         <li>remove 'content' data from the post previews and into the single post page</li>
-        <li>...</li>
+        <li>Convert markdown to HTML</li>
         <li><h1>DESIGN THE WEBSITE.</h1></li>
       </ul>
     </div>
