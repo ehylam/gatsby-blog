@@ -27,7 +27,6 @@ const IndexPage = ({data}, props) => {
         posts: posts
       })
   },[])
-  console.log(windowState);
 
 
   return (
