@@ -19,6 +19,7 @@ contentModule:
       わかりません。。
     date: 2020-05-16T11:14:17.215Z
     posttype: jp
+    publishtype: Publish
   - date: 2020-05-17T04:27:23.822Z
     heading: すみません、お手洗いはどこですか？
     content: |-
@@ -28,6 +29,7 @@ contentModule:
 
       じゃあ、またね
     posttype: jp
+    publishtype: Publish
   - date: 2020-05-19T02:51:03.512Z
     heading: 日本語をべんきょうしてる。。
     content: |-
@@ -48,6 +50,7 @@ contentModule:
 
       書かない
     posttype: jp
+    publishtype: Publish
   - date: 2020-05-23T03:20:23.138Z
     heading: "'flexible content' はどこですか？？"
     content: |
@@ -60,6 +63,7 @@ contentModule:
       新しいmacbookpro2022買おっかな。。？
       でも。。。ほんとに高いです。。
     posttype: jp
+    publishtype: Publish
   - date: 2020-05-24T03:46:08.469Z
     heading: お金を貯めなきゃいけない。。！
     content: |-
@@ -69,6 +73,7 @@ contentModule:
 
       (rain**ing)**
     posttype: jp
+    publishtype: Publish
   - date: 2020-05-26T04:16:34.302Z
     heading: はこう！
     content: |-
@@ -78,6 +83,7 @@ contentModule:
 
       （I'll wear these shoes)
     posttype: jp
+    publishtype: Publish
   - date: 2020-05-29T10:25:11.698Z
     heading: 明日仕事ありません。。でも。。
     content: |-
@@ -91,6 +97,7 @@ contentModule:
 
       つづけ 　ー (Keep on / keep up)
     posttype: jp
+    publishtype: Publish
   - posttype: web
     date: 2020-05-29T11:34:53.186Z
     heading: Use 'vw' to maintain the position of the selected element relative to
@@ -107,10 +114,11 @@ contentModule:
       \- Inside columns contain a wrapper (left/right)
 
       \-- Use margin/padding-left/right: {num}vw;
+    publishtype: Publish
   - posttype: web
     date: 2020-05-31T03:52:37.339Z
     heading: Post Type/ Category filtering system.
-    content: >+
+    content: >
       ** NOTETOSELF&TODO: Add a single post page or else the 'preview post' or
       else this happens..**
 
@@ -148,4 +156,5 @@ contentModule:
 
 
       FIN.
+    publishtype: Draft
 ---
