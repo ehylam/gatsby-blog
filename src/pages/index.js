@@ -9,7 +9,6 @@ import SEO from "../components/seo"
 
 // TODO:
 // Dynamic Filter List that can be added using NetlifyCMS repeater widget?
-
 const IndexPage = ({data}, props) => {
   const {markdownRemark} = data;
   const {frontmatter} = markdownRemark;
@@ -61,6 +60,7 @@ export const indexQuery = graphql`
           heading
           date(fromNow: false, formatString: "dddd DD MMMM YYYY HH:mm", locale: "")
           posttype
+          publishtype
         }
       }
       id

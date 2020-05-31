@@ -31,6 +31,10 @@
 
 		.content {
 			max-width: 100%;
+			p {
+				max-height: 130px;
+				overflow: hidden;
+			}
 			@media screen and (min-width: 1280px) {
 				max-width: 65%;
 			}
