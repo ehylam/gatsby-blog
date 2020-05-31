@@ -107,4 +107,10 @@ contentModule:
       \- Inside columns contain a wrapper (left/right)
 
       \-- Use margin/padding-left/right: {num}vw;
+  - posttype: web
+    date: 2020-05-31T03:52:37.339Z
+    heading: Post Type/ Category filtering system.
+    content: So, I'm surprised that I was able to create a filter system purely on
+      Javascript and some cool ES6 features as I usually use jQuery as it is
+      what I usually use for Wordpress development.
 ---
