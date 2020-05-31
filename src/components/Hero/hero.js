@@ -22,7 +22,7 @@ const Hero = (props) => {
         <li>Single Post Page with custom permalink</li>
         <li>remove 'content' data from the post previews and into the single post page</li>
         <li>...</li>
-        <li><h1 style="color:red;">DESIGN THE WEBSITE.</h1></li>
+        <li><h1>DESIGN THE WEBSITE.</h1></li>
       </ul>
     </div>
       <div className="foreground" style={style.fg}></div>
