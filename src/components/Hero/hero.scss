@@ -1,6 +1,9 @@
 .hero__container,
 .foreground {
-	height: 100vh;
+	height: 100vw;
+	@media screen and (min-width: 720px) {
+		height: 100vh;
+	}
 	width: 100%;
 	background-size: cover;
 	background-position: center;
@@ -10,6 +13,10 @@
 
 .hero__container {
 	position: relative;
+	padding: 20px;
+	@media screen and (min-width: 720px) {
+		padding: 0;
+	}
 	.foreground {
 		position: absolute;
 		top: 0;
@@ -32,7 +39,10 @@
 		color: white;
 
 		h1 {
-			font-size: 65px;
+			font-size: 43px;
+			@media screen and (min-width: 720px) {
+				font-size: 65px;
+			}
 		}
 	}
 }
