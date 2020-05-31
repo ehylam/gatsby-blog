@@ -1,9 +1,9 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import './Filter.scss';
 
 var filterArr = [];
 var postArr = [];
-var posts, uniq, postId;
+var uniq, postId;
 // posts = document.getElementsByClassName('content--wrapper');
 const Filter = ({posttypes, id, postData}) => {
     console.log(postData + " from state");

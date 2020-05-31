@@ -10,11 +10,7 @@ const Content = ({data, id}) => {
     }
   );
 
-  for (let i = 0; i < postType.length; i++) {
-    const element = postType[i];
 
-
-  }
   return (
     <section className="content__container" id={id}>
     {/* {Dont use index...} */}
@@ -27,7 +23,7 @@ const Content = ({data, id}) => {
             <span>{content.date}</span>
             <p>{content.content}</p>
           </div>
-          <a href="">Don't   Read More</a>
+          <a href="#">Don't   Read More</a>
         </div>
       ))
     }

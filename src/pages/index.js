@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Hero from '../components/Hero/hero'
 import Content from "../components/Content/content"
 import Filter from "../components/Filter/Filter"
+import SEO from "../components/seo"
 
 // TODO:
 // Dynamic Filter List that can be added using NetlifyCMS repeater widget?
@@ -16,6 +17,7 @@ const IndexPage = ({data}, props) => {
     windowOn: false,
     posts: null
   })
+
 
 
   useEffect(() => {
@@ -30,6 +32,7 @@ const IndexPage = ({data}, props) => {
 
   return (
     <Layout>
+      <SEO title={windowState.windowOn ? "I know that I don't know what I'm doing.." : 'Hold UP! loading...'}/>
       <Hero heading={frontmatter.heading}
             subheading={frontmatter.subheading}
             background={frontmatter.background}
