@@ -157,4 +157,11 @@ contentModule:
 
       FIN.
     publishtype: Draft
+  - posttype: jp
+    publishtype: Publish
+    date: 2020-06-02T03:27:22.941Z
+    heading: なくす。。。
+    content: |
+      （object)をなくすしました。。　ー　‥“‥ I lost a wallet
+      adding んですが　for more of a polite way.
 ---
