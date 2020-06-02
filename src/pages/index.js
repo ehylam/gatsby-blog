@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
+import Nav from "../components/Nav/Nav"
 import Hero from '../components/Hero/hero'
 import Content from "../components/Content/content"
 import Filter from "../components/Filter/Filter"
@@ -36,6 +37,7 @@ const IndexPage = ({data}, props) => {
             background={frontmatter.background}
             foreground={frontmatter.foreground}
       />
+      <Nav/>
       {/* Replace loading to a new loading component? */}
       { windowState.windowOn  ? <Filter posttypes={frontmatter.contentModule} postData={windowState.posts}/> : 'loading'}
       <Content data={frontmatter.contentModule} id={markdownRemark.id}/>
