@@ -17,7 +17,8 @@ const SinglePage = ({data}) => {
     <Layout>
     <SEO title="Post Title Here"/>
       <section className="single">
-      <div className="content" dangerouslySetInnerHTML={{__html: frontmatter.contentModule.content }}/>
+      <h1>{frontmatter.header}</h1>
+      <div className="content" dangerouslySetInnerHTML={{__html: frontmatter.content }}/>
       </section>
     </Layout>
    );
@@ -31,18 +32,8 @@ export const singleQuery = graphql`
   query singlePageQuery {
     markdownRemark {
       frontmatter {
-        templateKey
-        heading
-        subheading
-        background
-        foreground
-        contentModule {
-          content
-          heading
-          date(fromNow: false, formatString: "dddd DD MMMM YYYY HH:mm", locale: "")
-          posttype
-          publishtype
-        }
+        header
+        content
       }
       id
     }
