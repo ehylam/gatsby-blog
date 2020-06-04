@@ -1,5 +1,15 @@
 ---
 templateKey: post-module
 heading: Testing
-content: Hello, World!
+header: Hello, testing.
+content: |-
+  ## Hello, World
+
+  Testing,
+
+  testing, one, two, three.
+
+
+
+  `<h1> Test </h1>`
 ---
