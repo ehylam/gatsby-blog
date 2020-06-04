@@ -13,7 +13,7 @@
 	max-width: 1400px;
 	margin: 0 auto;
 	// Do you work in IE?
-	grid-auto-rows: 1fr;
+	// grid-auto-rows: 1fr;
 	.content--wrapper {
 		display: none;
 		justify-content: center;
@@ -31,7 +31,8 @@
 
 		.content {
 			max-width: 100%;
-			p {
+			p,
+			.info {
 				max-height: 130px;
 				overflow: hidden;
 			}

@@ -23,6 +23,7 @@ const Content = ({data, id}) => {
             <h2>{content.heading}</h2>
             <span>{content.date}</span>
             <p>{content.content}</p>
+            <div className="info" dangerouslySetInnerHTML={{__html: content.content }}></div>
           </div>
           <a href="#">Don't   Read More</a>
         </div>
