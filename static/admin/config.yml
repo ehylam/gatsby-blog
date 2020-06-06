@@ -10,7 +10,7 @@ collections:
     label: Content
     folder: src/pages/contents
     create: true
-    identifier_field: templateKey
+    identifier_field: heading
     slug: "{{year}}-{{heading}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-module"}
@@ -21,10 +21,10 @@ collections:
       - {label: "Content Module", name: "contentModule", widget: "list", fields: [{label: Date, name: date, widget: datetime, dateFormat: 'DD.MM.YYYY', timeFormat: 'HH:mm', pickerUtc: false }, {label: "Post Type", name: "posttype", widget: "select", options: ["web","jp","other"], default: ["web"]}, {label: "Publish Type", name: "publishtype", widget: "select", options: ["Draft","Publish"], default: ["Publish"]},{label: Heading, name: heading, widget: string}, {label: Content, name: content, widget: markdown}, {label: Image, name: image, widget: image, required: false}]}
   - name: singleposts
     label: Single Post
-    identifier_field: title
+    identifier_field: header
     folder: src/pages/posts
     create: true
     slug: "{{year}}-{{title}}"
     fields:
-      - {label: "Heading", name: "title", widget: "string"}
+      - {label: "Heading", name: "header", widget: "string"}
       - {label: "Content", name: "postcontent", widget: "markdown"}
