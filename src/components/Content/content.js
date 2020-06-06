@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import './content.scss';
 
 var postType = [];
 const Content = ({data, id}) => {
+  console.log(data);
   data.map((content) => {
       postType.push(content.posttype);
-      return ''
     }
   );
 
