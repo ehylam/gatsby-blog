@@ -32,7 +32,7 @@ const IndexPage = ({data}, props) => {
   return (
     <Layout>
       <SEO title={windowState.windowOn ? "I know that I don't know what I'm doing.." : 'Hold UP! loading...'}/>
-      <Hero heading={frontmatter.heading}
+      <Hero heading={frontmatter.title}
             subheading={frontmatter.subheading}
             background={frontmatter.background}
             foreground={frontmatter.foreground}
@@ -53,7 +53,7 @@ export const indexQuery = graphql`
     markdownRemark {
       frontmatter {
         templateKey
-        heading
+        title
         subheading
         background
         foreground
