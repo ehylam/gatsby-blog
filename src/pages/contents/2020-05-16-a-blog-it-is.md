@@ -1,6 +1,6 @@
 ---
 templateKey: content-module
-heading: A Blog it is..
+heading: A Blog it is....
 posttype: jp
 subheading: I don't know what I'm doing！
 foreground: /assets/foreground.png
