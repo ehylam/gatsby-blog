@@ -1,0 +1,15 @@
+.two-column {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 2rem;
+	&__left {
+		width: 50%;
+	}
+	&__right {
+		width: 50%;
+	}
+}

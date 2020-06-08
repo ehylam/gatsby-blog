@@ -1,6 +1,5 @@
 ---
 templateKey: content-module
-heading: A Blog it is....
 posttype: jp
 title: A blog it is...
 subheading: I don't know what I'm doing！
@@ -34,20 +33,20 @@ contentModule:
   - date: 2020-05-19T02:51:03.512Z
     heading: 日本語をべんきょうしてる。。
     content: |-
-      本当に寒いですね？  
+      本当に寒いですね？
 
-      写真を撮る﻿。  
+      写真を撮る﻿。
 
-      る﻿  
+      る﻿
 
-      食べる  
+      食べる
 
 
-      喰べない  
+      喰べない
 
-      みる  
+      みる
 
-      ううううう  
+      ううううう
 
       書かない
     posttype: jp
