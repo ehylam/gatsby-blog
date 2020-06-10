@@ -164,10 +164,8 @@ contentModule:
     content: |
       （object)をなくすしました。。　ー　‥“‥ I lost a wallet
       adding んですが　for more of a polite way.
-  - posttype:
-      - web
-    publishtype:
-      - Publish
+  - posttype: jp
+    publishtype: Publish
     date: 2020-06-10T05:37:37.549Z
     heading: すべこべ。。。
     content: |-
