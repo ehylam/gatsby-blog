@@ -21,8 +21,8 @@ collections:
   - name: singleposts
     label: Single Post
     folder: src/pages/posts
-    identifier_field: heading
+    create: true
     slug: "{{year}}-{{title}}"
     fields:
-      - {label: "Heading", name: "heading", widget: "string"}
-      - {label: "Content", name: "postcontent", widget: "markdown"}
+      - {label: "Heading", name: "title", widget: "string"}
+      - {label: "Content", name: "content", widget: "markdown"}

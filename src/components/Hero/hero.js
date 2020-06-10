@@ -2,8 +2,6 @@ import React from 'react';
 
 import './hero.scss';
 
-
-
 const Hero = (props) => {
   const style = {
     // ooo, possible dynamic background image.
